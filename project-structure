@@ -1,0 +1,18 @@
+puppy-restaurant/
+├── public/
+│   └── dishes/
+│       └── burger.jpg
+├── src/
+│   ├── assets/
+│   │   └── images/
+│   │       └── logo.png
+│   ├── components/
+│   ├── router/
+│   ├── stores/
+│   ├── styles/
+│   ├── views/
+│   ├── App.vue
+│   └── main.js
+├── index.html
+├── package.json
+└── vite.config.js 

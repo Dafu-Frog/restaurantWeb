@@ -1,0 +1,53 @@
+:root {
+  --primary-color: #FF69B4;
+  --secondary-color: #FFB6C1;
+  --background-color: #FFF0F5;
+  --success-color: #98FB98;
+  --warning-color: #FFD700;
+  --danger-color: #FFA07A;
+  
+  --border-radius-large: 20px;
+  --border-radius-medium: 16px;
+  --border-radius-small: 12px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  background-color: var(--background-color);
+}
+
+.page-container {
+  padding: 20px;
+}
+
+:deep(.el-button) {
+  border-radius: var(--border-radius-small);
+  
+  &.is-round {
+    border-radius: 20px;
+  }
+}
+
+:deep(.el-card) {
+  border-radius: var(--border-radius-medium);
+  transition: all 0.3s;
+  
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+}
+
+:deep(.el-dialog) {
+  border-radius: var(--border-radius-large);
+}
+
+:deep(.el-drawer) {
+  border-radius: var(--border-radius-large) 0 0 var(--border-radius-large);
+} 
